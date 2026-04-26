@@ -42,6 +42,13 @@ The default and VIA keymaps currently use both thumb layer keys as:
 
 That is implemented with `LT(_FN, KC_ESC)`.
 
+### Current keymap diagram
+
+![Current VIA keymap](../../../docs/keymaps/via_keymap.svg)
+
+The SVG above is generated from the checked-in VIA keymap using
+[keymap-drawer](https://github.com/caksoylar/keymap-drawer).
+
 ### 5-way clusters
 
 The cluster mapping used by this target is:
@@ -112,6 +119,35 @@ VIA keymap:
 ```sh
 qmk compile -kb yk/do52pro -km via
 ```
+
+## Generating the keymap diagram
+
+From the QMK repo root:
+
+```sh
+mkdir -p docs/keymaps
+
+qmk c2json keyboards/yk/do52pro/keymaps/via/keymap.c \
+  -kb yk/do52pro \
+  -km via \
+  -o docs/keymaps/via_keymap.json
+
+uvx --from keymap-drawer keymap parse \
+  -q docs/keymaps/via_keymap.json \
+  -l Base Fn \
+  -o docs/keymaps/via_keymap.yaml
+
+uvx --from keymap-drawer keymap draw \
+  docs/keymaps/via_keymap.yaml \
+  -j keyboards/yk/do52pro/keyboard.json \
+  -l LAYOUT \
+  -o docs/keymaps/via_keymap.svg
+```
+
+This requires:
+- QMK CLI
+- `uvx`
+- `keymap-drawer` via `uvx --from keymap-drawer keymap ...`
 
 ## Notes
 

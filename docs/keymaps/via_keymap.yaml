@@ -1,0 +1,72 @@
+layout: {qmk_keyboard: yk/do52pro, layout_name: LAYOUT}
+layers:
+  Base: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, LCTL, A, S, D, F, G, H, J, K, L, ;, '''', LSFT, Z, X,
+    C, V, B, N, M, ',', ., /, RSFT, LGUI, LALT, 'LT( FN,ESC)', SPC, ENT, 'LT( FN,ESC)', RALT, RGUI, HOME, PGDN, DEL, PGUP, END, MS WHLL, MS WHLD, MS BTN1, MS WHLU,
+    MS WHLR]
+  Fn:
+  - QK BOOT
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - DEL
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MPRV
+  - VOLD
+  - MUTE
+  - VOLU
+  - MNXT
+  - MS LEFT
+  - MS DOWN
+  - MS BTN1
+  - MS UP
+  - MS RGHT
